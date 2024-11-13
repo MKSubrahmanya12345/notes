@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Notes Viewer</h1>
+
+    <div id="notes-section">
+        <h2>Main Notes</h2>
+        <div class="navigation">
+            <button onclick="previousPage()">Previous</button>
+            <span id="page-number">Page 1</span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+        <img id="main-notes" src="im1.jpg" alt="Main Notes - Page 1">
+    </div>
+
+    <div class="buttons">
+        <button onclick="showShortNotes()">Show Short Notes</button>
+        <button onclick="showQuestions()">Show Questions</button>
+    </div>
+
+    <div id="additional-notes"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
